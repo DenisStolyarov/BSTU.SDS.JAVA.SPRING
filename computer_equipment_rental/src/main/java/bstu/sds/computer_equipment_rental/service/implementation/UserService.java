@@ -5,7 +5,7 @@ import bstu.sds.computer_equipment_rental.model.Status;
 import bstu.sds.computer_equipment_rental.model.User;
 import bstu.sds.computer_equipment_rental.repository.RoleRepository;
 import bstu.sds.computer_equipment_rental.repository.UserRepository;
-import bstu.sds.computer_equipment_rental.service.IService;
+import bstu.sds.computer_equipment_rental.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -16,16 +16,18 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class UserService implements IService<User> {
+public class UserService implements IUserService {
 
     private final RoleRepository roleRepository;
     private final UserRepository userRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
-    public UserService(RoleRepository roleRepository,
-                       UserRepository userRepository,
-                       BCryptPasswordEncoder bCryptPasswordEncoder) {
+    public UserService(
+            RoleRepository roleRepository,
+            UserRepository userRepository,
+            BCryptPasswordEncoder bCryptPasswordEncoder
+    ) {
         this.roleRepository = roleRepository;
         this.userRepository = userRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;

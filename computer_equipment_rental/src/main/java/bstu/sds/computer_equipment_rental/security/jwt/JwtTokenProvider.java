@@ -32,7 +32,6 @@ public class JwtTokenProvider {
     @Value("${jwt.token.expired}")
     private long validityInMilliseconds;
 
-
     @Autowired
     private UserDetailsService userDetailsService;
 
@@ -98,8 +97,9 @@ public class JwtTokenProvider {
         List<String> result = new ArrayList<>();
 
         userRoles.forEach(role -> {
-           result.add(role.getName());
+            result.add(role.getName());
         });
+
         return result;
     }
 }

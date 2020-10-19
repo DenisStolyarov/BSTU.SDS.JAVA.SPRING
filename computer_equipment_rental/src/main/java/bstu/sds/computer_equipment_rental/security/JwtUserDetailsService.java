@@ -1,9 +1,11 @@
 package bstu.sds.computer_equipment_rental.security;
 
+import bstu.sds.computer_equipment_rental.model.User;
 import bstu.sds.computer_equipment_rental.security.jwt.JwtUser;
 import bstu.sds.computer_equipment_rental.security.jwt.JwtUserFactory;
-import bstu.sds.computer_equipment_rental.service.implementation.UserService;
+import bstu.sds.computer_equipment_rental.service.IUserService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -12,9 +14,10 @@ import org.springframework.stereotype.Service;
 @Service
 @Slf4j
 public class JwtUserDetailsService implements UserDetailsService {
-    private final UserService userService;
+    private final IUserService userService;
 
-    public JwtUserDetailsService(UserService userService) {
+    @Autowired
+    public JwtUserDetailsService(IUserService userService) {
         this.userService = userService;
     }
 

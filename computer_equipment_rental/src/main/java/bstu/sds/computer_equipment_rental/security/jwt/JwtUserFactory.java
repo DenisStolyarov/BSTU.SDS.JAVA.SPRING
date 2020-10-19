@@ -3,7 +3,6 @@ package bstu.sds.computer_equipment_rental.security.jwt;
 import bstu.sds.computer_equipment_rental.model.Role;
 import bstu.sds.computer_equipment_rental.model.Status;
 import bstu.sds.computer_equipment_rental.model.User;
-import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
@@ -11,8 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@NoArgsConstructor
 public final class JwtUserFactory {
+
+    public JwtUserFactory(){}
 
     public static JwtUser create(User user) {
         return new JwtUser(

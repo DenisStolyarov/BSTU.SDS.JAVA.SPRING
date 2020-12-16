@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <script th:src="@{/js/registration.js}"></script>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<div style="display: flex">
+    <div class="for" style="margin-top: 50px;margin-left: 100px">
+        <h3>Register</h3>
+        <div id="wrapper">
+            <div id="user-div" onclick="hide_result()">
+                <input id="username" class="white" type="text" placeholder="Enter login">
+                <small id="smusername" class="form-text text-muted red"></small>
+
+                <input id="password" class="white" type="password" placeholder="Enter password">
+                <small id="smpassword" class="form-text text-muted red"></small>
+
+                <input id="submitPassword" class="white" type="password" placeholder="Submit password">
+                <small id="smsubmitPassword" class="form-text text-muted red"></small>
+
+                <input id="firstName" class="white" type="text" placeholder="Enter First Name">
+                <small id="smfirstName" class="form-text text-muted red"></small>
+
+                <input id="lastName" class="white" type="text" placeholder="Enter Last Name">
+                <small id="smlastName" class="form-text text-muted red"></small>
+
+                <input id="email" class="white" type="text" placeholder="Enter Email">
+                <small id="smemail" class="form-text text-muted red"></small>
+
+                <button content="Register"  onclick="Register()" type="submit">
+                    Register
+                </button>
+            </div>
+        </div>
+        <h1 id="res" style="text-align:  center"></h1>
+        <a style="text-decoration: none; color: white; size: 18px; border: 1px solid white; border-radius: 5px; padding: 5px;" href="/login">Go to Login</a>
+    </div>
+</div>
+
+</body>
+</html>

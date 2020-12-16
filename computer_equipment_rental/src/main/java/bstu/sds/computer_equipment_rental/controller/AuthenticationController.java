@@ -1,6 +1,7 @@
 package bstu.sds.computer_equipment_rental.controller;
 
 import bstu.sds.computer_equipment_rental.dto.AuthenticationDto;
+import bstu.sds.computer_equipment_rental.dto.RegistrationDto;
 import bstu.sds.computer_equipment_rental.model.User;
 import bstu.sds.computer_equipment_rental.security.jwt.JwtTokenProvider;
 import bstu.sds.computer_equipment_rental.service.implementation.UserService;
@@ -54,6 +55,33 @@ public class AuthenticationController {
 
             Map<Object, Object> response = new HashMap<>();
             response.put("username", username);
+            response.put("token", token);
+
+            return ResponseEntity.ok(response);
+        } catch (AuthenticationException e) {
+            throw new BadCredentialsException("Invalid username or password");
+        }
+    }
+
+    @PostMapping("register")
+    public ResponseEntity Register(@RequestBody RegistrationDto requestDto) {
+        try {
+            User user = new User();
+            user.setUsername(requestDto.getUsername());
+            user.setFirstName(requestDto.getFirstName());
+            user.setLastName(requestDto.getLastName());
+            user.setEmail(requestDto.getEmail());
+            user.setPassword(requestDto.getPassword());
+
+            var registeredUser = userService.create(user);
+            if (registeredUser == null) {
+                throw new UsernameNotFoundException("User not created");
+            }
+
+            String token = jwtTokenProvider.createToken(registeredUser.getUsername(), registeredUser.getRoles());
+
+            Map<Object, Object> response = new HashMap<>();
+            response.put("username", registeredUser.getUsername());
             response.put("token", token);
 
             return ResponseEntity.ok(response);

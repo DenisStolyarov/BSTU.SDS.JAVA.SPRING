@@ -108,4 +108,109 @@
             <column name="name" value="ROLE_ADMIN"/>
         </insert>
     </changeSet>
+
+    <changeSet id="1.0.6" author="denis.stolyarov">
+        <createTable tableName="orders">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="date_from" type="DATETIME" defaultValue="GETDATE()">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="date_to" type="DATETIME" defaultValue="GETDATE()">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="price" type="FLOAT" defaultValue="0">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="user_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="created" type="DATETIME" defaultValue="GETDATE()">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="updated" type="DATETIME" defaultValue="GETDATE()">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="status" type="VARCHAR(25)" defaultValue="ACTIVE">
+                <constraints nullable="false"/>
+            </column>
+
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.0.7" author="denis.stolyarov">
+        <createTable tableName="devices">
+            <column name="id" type="BIGINT" autoIncrement="true">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+
+            <column name="name" type="VARCHAR(100)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+
+            <column name="description" type="VARCHAR(255)">
+                <constraints nullable="false" unique="true"/>
+            </column>
+
+            <column name="created" type="DATETIME" defaultValue="GETDATE()">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="updated" type="DATETIME" defaultValue="GETDATE()">
+                <constraints nullable="false"/>
+            </column>
+
+            <column name="status" type="VARCHAR(25)" defaultValue="ACTIVE">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.0.8" author="denis.stolyarov">
+        <createTable tableName="order_devices">
+            <column name="order_id" type="BIGINT">
+            </column>
+
+            <column name="device_id" type="BIGINT">
+            </column>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1.0.9" author="denis.stolyarov">
+        <addForeignKeyConstraint baseColumnNames="order_id"
+                                 baseTableName="order_devices"
+                                 constraintName="fk_order_devices_order"
+                                 onDelete="CASCADE"
+                                 onUpdate="RESTRICT"
+                                 referencedColumnNames="id"
+                                 referencedTableName="orders"/>
+    </changeSet>
+
+    <changeSet id="1.1.0" author="denis.stolyarov">
+        <addForeignKeyConstraint baseColumnNames="device_id"
+                                 baseTableName="order_devices"
+                                 constraintName="fk_order_devices_device"
+                                 onDelete="CASCADE"
+                                 onUpdate="RESTRICT"
+                                 referencedColumnNames="id"
+                                 referencedTableName="devices"/>
+    </changeSet>
+
+    <changeSet id="1.1.1" author="denis.stolyarov">
+        <addForeignKeyConstraint baseColumnNames="user_id"
+                                 baseTableName="orders"
+                                 constraintName="fk_user_orders"
+                                 onDelete="CASCADE"
+                                 onUpdate="RESTRICT"
+                                 referencedColumnNames="id"
+                                 referencedTableName="users"/>
+    </changeSet>
 </databaseChangeLog>

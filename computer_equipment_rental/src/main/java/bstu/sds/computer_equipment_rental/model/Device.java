@@ -11,7 +11,7 @@ import java.util.List;
 public class Device extends BaseEntity {
 
     @Column(name = "name")
-    private String Name;
+    private String name;
 
     @Column(name = "description")
     private String Description;

@@ -2,9 +2,11 @@ package bstu.sds.computer_equipment_rental.controller;
 
 import bstu.sds.computer_equipment_rental.dto.AuthenticationDto;
 import bstu.sds.computer_equipment_rental.dto.RegistrationDto;
+import bstu.sds.computer_equipment_rental.excaption.UserValidationException;
 import bstu.sds.computer_equipment_rental.model.User;
 import bstu.sds.computer_equipment_rental.security.jwt.JwtTokenProvider;
 import bstu.sds.computer_equipment_rental.service.implementation.UserService;
+import bstu.sds.computer_equipment_rental.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -12,10 +14,13 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.validation.Valid;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,14 +35,18 @@ public class AuthenticationController {
 
     private final UserService userService;
 
+    private final UserValidator userValidator;
+
     @Autowired
     public AuthenticationController(
             AuthenticationManager authenticationManager,
             JwtTokenProvider jwtTokenProvider,
-            UserService userService) {
+            UserService userService,
+            UserValidator userValidator) {
         this.authenticationManager = authenticationManager;
         this.jwtTokenProvider = jwtTokenProvider;
         this.userService = userService;
+        this.userValidator = userValidator;
     }
 
     @PostMapping("login")
@@ -64,8 +73,14 @@ public class AuthenticationController {
     }
 
     @PostMapping("register")
-    public ResponseEntity Register(@RequestBody RegistrationDto requestDto) {
+    public ResponseEntity Register(@Valid @RequestBody RegistrationDto requestDto, BindingResult errors) {
         try {
+            userValidator.validate(requestDto, errors);
+
+            if(errors.hasErrors()){
+                throw new UserValidationException(errors);
+            }
+
             User user = new User();
             user.setUsername(requestDto.getUsername());
             user.setFirstName(requestDto.getFirstName());

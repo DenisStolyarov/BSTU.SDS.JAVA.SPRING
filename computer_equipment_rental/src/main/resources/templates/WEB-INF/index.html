@@ -6,8 +6,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  <title>Title</title>
 
-    <script th:src="@{/js/index.js}"></script>
     <link rel="stylesheet" th:href="@{/css/index.css}">
+
+    <script th:src="@{../js/index.js}"></script>
+    <script th:src="@{../js/items.js}"></script>
+    <script th:src="@{../js/rent.js}"></script>
+    <script th:src="@{../js/admin.js}"></script>
+    <script th:src="@{../js/common.js}"></script>
+    <script th:src="@{../js/user.js}"></script>
+    <script>
+        window.onload = load;
+    </script>
 </head>
 <body>
 <header>
@@ -23,34 +32,54 @@
     </nav>
 </header>
 <main>
-    <div class="container" style="padding-top: 50px">
+    <div class="container">
+        <h3>All computers </h3>
         <div class="row">
-            <div class="col-8" >
-                <div class="step__content" >
-                    <p>MAin pAge</p>
+
+            <div class="col-sm">
+                <div class="results">
+
+                </div>
+                <div class="nextPrev">
+
+                </div>
+                <div class="logOut">
+
+                </div>
+                <div class="logReg">
+
                 </div>
             </div>
-            <div id="user_info" class="col-4" >
-                <div class="container">
-                    <div id="spisok" class="row">
-                        <div class="col-6">
-                            <ul id="keys" class="list3b">
+            <div class="col-sm">
+                <input type="hidden">
+                <div class="personalInfo">
 
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul id="values" class="list3b">
+                </div>
+                <div class="create">
 
-                            </ul>
+                </div>
+                <div class="update">
 
-                        </div>
-                        <div id="buttt"></div>
-                    </div>
+                </div>
+                <div class="delete">
+
+                </div>
+                <div class="search">
+
+                </div>
+                <div id="errMes">
+
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="someList">
+
                 </div>
             </div>
 
         </div>
     </div>
+    <div class="neededInfo">
 </main>
 </body>
 </html>

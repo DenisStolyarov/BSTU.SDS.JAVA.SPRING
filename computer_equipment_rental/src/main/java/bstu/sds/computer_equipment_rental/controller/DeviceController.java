@@ -3,7 +3,6 @@ package bstu.sds.computer_equipment_rental.controller;
 
 import bstu.sds.computer_equipment_rental.model.Device;
 import bstu.sds.computer_equipment_rental.service.implementation.DeviceService;
-import bstu.sds.computer_equipment_rental.service.implementation.OrderService;
 import bstu.sds.computer_equipment_rental.service.implementation.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

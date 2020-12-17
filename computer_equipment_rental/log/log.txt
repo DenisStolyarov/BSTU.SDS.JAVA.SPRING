@@ -1,0 +1,267 @@
+"2020-12-17 18:19:55 [main] INFO  b.s.c.ComputerEquipmentRentalApplication - Starting ComputerEquipmentRentalApplication on WIN-5934G4VVKI1 with PID 22112 (D:\Education\5 sem\JAVA\Tasks\BSTU.SDS.JAVA.SPRING\computer_equipment_rental\target\classes started by User in D:\Education\5 sem\JAVA\Tasks\BSTU.SDS.JAVA.SPRING\computer_equipment_rental)
+""2020-12-17 18:19:55 [main] INFO  b.s.c.ComputerEquipmentRentalApplication - No active profile set, falling back to default profiles: default
+""2020-12-17 18:19:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+""2020-12-17 18:19:55 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 45ms. Found 4 JPA repository interfaces.
+""2020-12-17 18:19:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5050 (http)
+""2020-12-17 18:19:56 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2020-12-17 18:19:56 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+""2020-12-17 18:19:56 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2020-12-17 18:19:56 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 899 ms
+""2020-12-17 18:19:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2020-12-17 18:19:56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT COUNT(*) FROM DATABASECHANGELOGLOCK
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT COUNT(*) FROM DATABASECHANGELOGLOCK
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT LOCKED FROM DATABASECHANGELOGLOCK WHERE ID=1
+""2020-12-17 18:19:57 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:57 [main] INFO  l.lockservice.StandardLockService - Successfully acquired change log lock
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CONVERT([sysname], DATABASEPROPERTYEX(N'Computer_Equipment_Rental_Service', 'Collation'))
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT TOP 1 MD5SUM FROM DATABASECHANGELOG WHERE MD5SUM IS NOT NULL
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT COUNT(*) FROM DATABASECHANGELOG
+""2020-12-17 18:19:58 [main] INFO  l.c.StandardChangeLogHistoryService - Reading from DATABASECHANGELOG
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT * FROM DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+""2020-12-17 18:19:58 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 18:19:58 [main] INFO  l.lockservice.StandardLockService - Successfully released change log lock
+""2020-12-17 18:19:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2020-12-17 18:19:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2020-12-17 18:19:58 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-12-17 18:19:58 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2020-12-17 18:19:58 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-12-17 18:19:58 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+""2020-12-17 18:19:58 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+""2020-12-17 18:19:58 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+""2020-12-17 18:19:58 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+""2020-12-17 18:19:58 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+""2020-12-17 18:19:58 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+""2020-12-17 18:19:58 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+""2020-12-17 18:19:58 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29ec5005, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dc5eb8f, org.springframework.security.web.header.HeaderWriterFilter@1d0f03f6, org.springframework.security.web.authentication.logout.LogoutFilter@69d6fe75, bstu.sds.computer_equipment_rental.security.jwt.JwtTokenFilter@42ceb67f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17a89cb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40a2fdd2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52e44f71, org.springframework.security.web.session.SessionManagementFilter@5d4af473, org.springframework.security.web.access.ExceptionTranslationFilter@538fb761, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4407f129]
+""2020-12-17 18:19:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5050 (http) with context path ''
+""2020-12-17 18:19:58 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+""2020-12-17 18:19:59 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2020-12-17 18:19:59 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-12-17 18:19:59 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+""2020-12-17 18:19:59 [main] INFO  b.s.c.ComputerEquipmentRentalApplication - Started ComputerEquipmentRentalApplication in 4.714 seconds (JVM running for 5.456)
+""2020-12-17 19:05:11 [main] INFO  b.s.c.ComputerEquipmentRentalApplication - Starting ComputerEquipmentRentalApplication on WIN-5934G4VVKI1 with PID 2552 (D:\Education\5 sem\JAVA\Tasks\BSTU.SDS.JAVA.SPRING\computer_equipment_rental\target\classes started by User in D:\Education\5 sem\JAVA\Tasks\BSTU.SDS.JAVA.SPRING\computer_equipment_rental)
+""2020-12-17 19:05:11 [main] INFO  b.s.c.ComputerEquipmentRentalApplication - No active profile set, falling back to default profiles: default
+""2020-12-17 19:05:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+""2020-12-17 19:05:11 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44ms. Found 4 JPA repository interfaces.
+""2020-12-17 19:05:12 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5050 (http)
+""2020-12-17 19:05:12 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+""2020-12-17 19:05:12 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+""2020-12-17 19:05:12 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+""2020-12-17 19:05:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 839 ms
+""2020-12-17 19:05:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+""2020-12-17 19:05:12 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT COUNT(*) FROM DATABASECHANGELOGLOCK
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT COUNT(*) FROM DATABASECHANGELOGLOCK
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT LOCKED FROM DATABASECHANGELOGLOCK WHERE ID=1
+""2020-12-17 19:05:13 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:13 [main] INFO  l.lockservice.StandardLockService - Successfully acquired change log lock
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CONVERT([sysname], DATABASEPROPERTYEX(N'Computer_Equipment_Rental_Service', 'Collation'))
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT CASE ServerProperty('EngineEdition')
+         WHEN 1 THEN 'Personal'
+         WHEN 2 THEN 'Standard'
+         WHEN 3 THEN 'Enterprise'
+         WHEN 4 THEN 'Express'
+         WHEN 5 THEN 'Azure'
+         ELSE 'Unknown'
+       END
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT TOP 1 MD5SUM FROM DATABASECHANGELOG WHERE MD5SUM IS NOT NULL
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT COUNT(*) FROM DATABASECHANGELOG
+""2020-12-17 19:05:14 [main] INFO  l.c.StandardChangeLogHistoryService - Reading from DATABASECHANGELOG
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - SELECT * FROM DATABASECHANGELOG ORDER BY DATEEXECUTED ASC, ORDEREXECUTED ASC
+""2020-12-17 19:05:14 [main] INFO  liquibase.executor.jvm.JdbcExecutor - select schema_name()
+""2020-12-17 19:05:14 [main] INFO  l.lockservice.StandardLockService - Successfully released change log lock
+""2020-12-17 19:05:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+""2020-12-17 19:05:14 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+""2020-12-17 19:05:14 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+""2020-12-17 19:05:14 [task-1] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+""2020-12-17 19:05:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2020-12-17 19:05:14 [task-1] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.21.Final
+""2020-12-17 19:05:14 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+""2020-12-17 19:05:14 [task-1] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+""2020-12-17 19:05:14 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+""2020-12-17 19:05:14 [task-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+""2020-12-17 19:05:14 [task-1] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+""2020-12-17 19:05:14 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+""2020-12-17 19:05:14 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@29ec5005, org.springframework.security.web.context.SecurityContextPersistenceFilter@3dc5eb8f, org.springframework.security.web.header.HeaderWriterFilter@1d0f03f6, org.springframework.security.web.authentication.logout.LogoutFilter@69d6fe75, bstu.sds.computer_equipment_rental.security.jwt.JwtTokenFilter@42ceb67f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17a89cb1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40a2fdd2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@52e44f71, org.springframework.security.web.session.SessionManagementFilter@5d4af473, org.springframework.security.web.access.ExceptionTranslationFilter@538fb761, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4407f129]
+""2020-12-17 19:05:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5050 (http) with context path ''
+""2020-12-17 19:05:14 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+""2020-12-17 19:05:15 [task-1] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+""2020-12-17 19:05:15 [task-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2020-12-17 19:05:15 [main] INFO  o.s.d.r.c.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+""2020-12-17 19:05:15 [main] INFO  b.s.c.ComputerEquipmentRentalApplication - Started ComputerEquipmentRentalApplication in 4.735 seconds (JVM running for 5.585)
+""2020-12-17 19:05:53 [http-nio-5050-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2020-12-17 19:05:53 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+""2020-12-17 19:05:53 [http-nio-5050-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+""2020-12-17 19:06:05 [http-nio-5050-exec-3] INFO  b.s.c.s.implementation.UserService - findByUsername - user: [FAILED toString()] found by username admin
+""2020-12-17 19:06:05 [http-nio-5050-exec-3] INFO  b.s.c.security.JwtUserDetailsService - loadUserByUsername - user with username: admin loaded
+""2020-12-17 19:06:05 [http-nio-5050-exec-3] INFO  b.s.c.s.implementation.UserService - findByUsername - user: [FAILED toString()] found by username admin
+"

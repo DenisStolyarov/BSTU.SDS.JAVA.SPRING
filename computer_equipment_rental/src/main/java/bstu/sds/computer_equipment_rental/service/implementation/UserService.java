@@ -24,6 +24,9 @@ public class UserService implements IUserService {
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
+    private UserService userServiceImpl;
+
+    @Autowired
     public UserService(
             RoleRepository roleRepository,
             UserRepository userRepository,
@@ -45,6 +48,14 @@ public class UserService implements IUserService {
         user.setStatus(Status.ACTIVE);
         user.setCreated(new Date());
         user.setUpdated(new Date());
+
+        String message = String.format(
+                "Hello %s!\n" +
+                        "activate your code , need to visit http://localhost:5050/login/%s",
+                user.getFirstName(),
+                user.getUsername()
+        );
+        mailSender.send(user.getEmail(), "Activation code", message);
 
         var registeredUser = userRepository.save(user);
 

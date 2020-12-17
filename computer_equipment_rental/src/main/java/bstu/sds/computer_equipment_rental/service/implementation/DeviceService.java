@@ -46,6 +46,21 @@ public class DeviceService implements IDeviceService {
         }
     }
 
+    public Device findByName(String name) {
+        var device = deviceRepository.findByName(name);
+
+        if (device == null) {
+
+            log.info("findById - Device not found with name: {}", device);
+
+            return null;
+        } else {
+            log.info("findByName - Device: {} found by name: {}", device, name);
+
+            return device;
+        }
+    }
+
     @Override
     public void delete(Long id) {
         deviceRepository.deleteById(id);
